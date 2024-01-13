@@ -1,0 +1,17 @@
+.gridRow {
+    display: flex;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.trail {
+    width: 10px;   
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
