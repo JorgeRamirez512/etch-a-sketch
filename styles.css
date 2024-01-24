@@ -1,17 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: khaki;
+}
+
+#container {
+    display: grid;
+    /* grid-gap: 5px; */
+}
+
 .gridRow {
     display: flex;
 }
 
 .cell {
-    border: 1px solid black;
     width: 20px;
     height: 20px;
+    border: 1px solid black;
 }
 
-.trail {
-    width: 10px;   
-    height: 10px;
-    background-color: red;
-    position: absolute;
-    border-radius: 50%;
+button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
 }
+
+#toggleEraserBtn {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+#toggleEraserBtn.EraserOn {
+    background-color: #00ff00;
+}
+
