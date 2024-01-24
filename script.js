@@ -29,6 +29,13 @@ clearGridBtn.addEventListener("click", clearGrid);
 toggleEraserBtn.addEventListener("click", function() {
     isEraserOn = !isEraserOn; // Toggle the eraser state
     toggleEraserBtn.textContent = isEraserOn ? "Eraser On" : "Eraser Off";
+    
+    // Add or remove the EraserOn class based on the state
+    if (isEraserOn) {
+        toggleEraserBtn.classList.add("EraserOn");
+    } else {
+        toggleEraserBtn.classList.remove("EraserOn");
+    }
 });
 
 function clearGrid() {
@@ -53,3 +60,5 @@ function getRandomColor() {
     // Generate a random color in hexadecimal format
     return '#' + Math.floor(Math.random()*16777215).toString(16);
 }
+
+
